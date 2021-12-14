@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace Dungeon
 {
-    class Program
+    class DungeonApp
     {
         static void Main(string[] args)
         {
+
+
+
         }
     }
 }
