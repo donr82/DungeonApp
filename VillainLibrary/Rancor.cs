@@ -15,10 +15,10 @@ namespace VillainLibrary
         public Rancor()
         {
             
-            MaxLife = 50;
-            MaxDamage = 15;
+            MaxLife = 100;
+            MaxDamage = 25;
             Name = ("Rancor");
-            Life = 50;
+            Life = 100;
             HitChance = 25;
             Dodge = 2;
             MinDamage = 1;

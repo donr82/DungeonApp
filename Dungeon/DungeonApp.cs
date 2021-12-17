@@ -101,11 +101,13 @@ W) Wookie
             switch (characterChoice)
             {
                 case "J":
-                    Console.WriteLine("You chose a Jedi");
+                    Console.WriteLine("You chose a Jedi");                   
                     break;
+
                 case "S":
                     Console.WriteLine("You chose a smuggler");
                     break;
+
                 case "W":
                     Console.WriteLine("You chose a wookie");
                     break;
