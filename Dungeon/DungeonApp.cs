@@ -78,8 +78,42 @@ namespace Dungeon
             //TODO 1. Score
             //TODO 2. Create Player
             Console.WriteLine("Select your hero");
+            Console.WriteLine(@"
+J) Jedi
+    Hit Chance : 50
+    Dodge: 5
+    Life: 50
+    Weapon: Lightsaber      Damage:1-15
+S) Smuggler
+    Hit Chance: 25
+    Dodge: 2
+    Life: 35
+    Weapon: Blaster Pistol  Damage: 1-5
+W) Wookie
+    Hit Chance: 30
+    Dodge: 3
+    Life: 75
+    Weapon: Bowcaster       Damage: 1-8
+");
+
+            string characterChoice = Console.ReadKey(true).Key.ToString();
+            Console.Clear();
+            switch (characterChoice)
+            {
+                case "J":
+                    Console.WriteLine("You chose a Jedi");
+                    break;
+                case "S":
+                    Console.WriteLine("You chose a smuggler");
+                    break;
+                case "W":
+                    Console.WriteLine("You chose a wookie");
+                    break;
+            }
+        
+
             //TODO set up choice to select character
-            Weapon lightsaber = new Weapon(1, 10, "A lightsaber! The weapon of a Jedi, an elegant weapon for a more civilized age", 20);
+            Weapon lightsaber = new Weapon(1, 15, "A lightsaber! The weapon of a Jedi, an elegant weapon for a more civilized age", 25);
             Console.WriteLine("Enter a name for your hero");
             string heroName = Console.ReadLine();
             Hero hero = new Hero(heroName, 50, 5, 50, 50, Race.Jedi, lightsaber, "Do or Do Not, there is no try.");
